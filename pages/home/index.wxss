@@ -1,0 +1,18 @@
+.item{
+  width: 48%;
+  height:150rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+  color: #ffffff;
+  line-height: 150rpx;
+  text-align: center;
+  box-shadow: 0 5rpx 15rpx rgba(0, 0, 0,0.4) inset;
+}
+.func1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 27rpx;
+}

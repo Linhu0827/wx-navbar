@@ -1,0 +1,13 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="func1">
+      <block wx:key='unique' wx:for="{{func1}}">
+        <view class="item {{toggleDelay?'animation-slide-bottom':''}}"  style="background-color:{{item.color}};animation-delay: {{(index+1)*0.05}}s;" data-url="{{item.url?item.url:''}}" bindtap="goModel">{{item.name}}</view>
+      </block>
+    </view>
+    <view class="bootom-box {{isIphoneX?'iphoneX-height':''}}"></view>
+  </view>
+</view>
+<tabbar tabbar="{{tabbar}}"></tabbar>

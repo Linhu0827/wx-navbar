@@ -1,0 +1,12 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="func1">
+      <block wx:key='unique' wx:for="{{func1}}">
+        <view class="item" style=background-color:{{item.color}}" data-url="{{item.url?item.url:''}}" bindtap="goModel">{{item.name}}</view>
+      </block>
+    </view>
+    
+  </view>
+</view>
