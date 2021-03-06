@@ -1,0 +1,18 @@
+
+.aboutBox{
+  padding: 50rpx;
+  margin: 50rpx;
+  background-color: #fff;
+}
+.aboutTitle{
+  font-size: 32rpx;
+  color: #8799a3;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.aboutItem{
+  line-height: 1.6;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #666666;
+}

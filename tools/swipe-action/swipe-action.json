@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/index",
+    "swipe-action": "/components/swipe-action/swipe-action"
+  }
+}

@@ -1,0 +1,25 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" icon-color='#fff' title-color="#ffffff" custom-class='cus'
+    bg-color='linear-gradient(45deg, #39b54a, #8dc63f)'></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="aboutBox">
+      <view class="aboutTitle">关于Ttiger</view>
+      <view class="aboutItem">
+        该项目是我个人开发的一款微信小程序组件库。这个项目有一些实用的组件。
+      </view>
+      <view class="aboutItem">
+        人都有以第一印象定好坏的习惯,认为一个人好时，就会爱屋及乌;认为一个人不好时，就会全盘否认.
+      </view>
+      <view class="aboutItem">
+        人生中的老师只有两个，一个是岁月，一个是骗子。
+      </view>
+      <view class="aboutItem">
+        愿你有前进一寸的勇气，亦有后退一尺的从容。希望是火，失望是烟，生活就是一边点火，一边冒烟。
+      </view>
+      <view class="aboutItem">
+        更多功能敬请期待！
+      </view>
+    </view>
+  </view>
+</view>

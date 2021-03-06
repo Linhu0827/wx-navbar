@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/index",
+    "tui-countdown": "/components/countdown/countdown"
+  }
+}

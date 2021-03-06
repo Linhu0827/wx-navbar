@@ -1,0 +1,81 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" icon-color='#fff' title-color="#fff" show-nav="{{showNav}}" back="{{back}}" bg-color="#5677FC">
+  </navbar>
+  <view class='page-content'>
+    <view class="container">
+      <view class='tui-notice-board'>
+        <view class="tui-icon-bg">
+          <tui-icon tui-icon-class="tui-rolling-icon" name-="news-fill" size='24' color='#f54f46'></tui-icon>
+        </view>
+        <view class="tui-scorll-view" bindtap='detail'>
+          <view class="tui-notice {{animation?'tui-animation':''}}">我们的梦想”才不无趣！因为！因为是我们一起创造的！怎么可能输给你这种人！绝对！绝对！绝对不会输！</view>
+        </view>
+      </view>
+
+      <view class="tui-subject">纵向滚动</view>
+      <view class="tui-rolling-news">
+        <tui-icon tui-icon-class="tui-rolling-icon" name-="news-fill" size='28' color='#5677fc'></tui-icon>
+        <swiper vertical="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="3000" class="tui-swiper">
+          <swiper-item wx:for="{{newsList}}" wx:key="unique" class="tui-swiper-item">
+            <view class="tui-news-item" bindtap='detail'>{{item}}</view>
+          </swiper-item>
+        </swiper>
+      </view>
+
+      <!--搜索框-->
+      <view class="tui-searchbox">
+
+        <view class="tui-rolling-search">
+          <icon type="search" class="tui-rolling-icon" size='16' color='#999'></icon>
+          <swiper vertical="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="3000" class="tui-swiper">
+            <swiper-item wx:for="{{hotSearch}}" wx:key="unique" class="tui-swiper-item">
+              <view class="tui-news-item" bindtap='detail'>{{item}}</view>
+            </swiper-item>
+          </swiper>
+        </view>
+
+      </view>
+
+      <view class="tui-subject">横向滚动</view>
+      <view class="tui-rolling-news">
+        <tui-icon tui-icon-class="tui-rolling-icon" name-="news-fill" size='28' color='#5677fc'></tui-icon>
+        <swiper autoplay="{{true}}" circular="{{true}}" interval="3000" class="tui-swiper">
+          <swiper-item wx:for="{{newsList}}" wx:key="unique" class="tui-swiper-item">
+            <view class="tui-news-item" bindtap='detail'>{{item}}</view>
+          </swiper-item>
+        </swiper>
+      </view>
+
+      <!--classify-->
+      <view class="tui-spike-box">
+        <view class="tui-spike-title list-item">限时秒杀</view>
+        <!--商品列表-->
+        <swiper indicator-dots="{{false}}" autoplay="true" interval="5000" duration="400" circular="{{true}}"
+          display-multiple-items="{{2}}" vertical="true" class="tui-spike-swiper">
+          <swiper-item wx:for="{{productList}}" wx:key="unique">
+            <view class="tui-pro-item list-item" hover-class="hover" hover-start-time="150" bindtap="detail">
+              <image src="{{item.img}}" class="tui-pro-img" mode="aspectFill" />
+              <view class="tui-pro-content">
+                <view class="tui-pro-tit">{{item.name}}</view>
+                <view class="tui-pro-btmbox">
+                  <view class="tui-pro-price">
+                    <text class="tui-sale-price">￥{{item.sale}}</text>
+                    <text class="tui-factory-price">￥{{item.factory}}</text>
+                  </view>
+                  <view class="tui-countdown">
+                    <view class="tui-countdown-text">剩余</view>
+                    <tui-countdown time="{{item.time}}" color="#e41f19" bcolor="#e41f19" colonColor="#e41f19">
+                    </tui-countdown>
+                    <view class="tui-countdown-text">结束</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </swiper-item>
+        </swiper>
+        <!--商品列表-->
+
+      </view>
+    </view>
+  </view>
+</view>

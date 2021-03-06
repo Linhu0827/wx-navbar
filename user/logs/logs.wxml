@@ -1,0 +1,24 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" icon-color='#fff' title-color="#ffffff" bg-color='linear-gradient(45deg, #39b54a, #8dc63f)'></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="listview-container">
+      <block wx:for="{{logs}}" wx:key="unique">
+        <view class="playlog-item" bindtap="itemTapped">
+          <view class="dotline">
+            <!-- 竖线 -->
+            <view class="line"></view>
+            <!-- 圆点 -->
+            <view class="dot"></view>
+            <!-- 时间戳 -->
+          </view>
+          <view class="content">
+            <text class="course">{{item.time}}</text>
+            <text class="chapter">{{item.content}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+
+  </view>
+</view>
