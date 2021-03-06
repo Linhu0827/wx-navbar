@@ -1,0 +1,13 @@
+/* pages/test5/test5.wxss */
+.top{
+  height: 90px; 
+  background-color: red;
+  text-align: center;
+  line-height: 90rpx;
+}
+.item{
+  width: 100%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+}

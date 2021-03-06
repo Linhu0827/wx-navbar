@@ -1,0 +1,16 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}" bg-color='#09BFEA' back="{{back}}"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="container">
+      <view>手写板（请在下方区域手写内容）</view>
+      <canvas style="width: {{canvasw}}px; height: {{canvash}}px" class="canvas" id="canvas" canvas-id="canvas" disable-scroll="true" bindtouchstart="canvasStart" bindtouchmove="canvasMove" bindtouchend="canvasEnd" touchcancel="canvasEnd" binderror="canvasIdErrorCallback"></canvas>
+      <view class='btns canvaspd'>
+        <button bindtap="cleardraw">清除画板</button>
+        <button class="show-btn" bindtap="setSign">确定</button>
+        <button class="save-btn" bindtap="{{canvasimgsrc.length > 0?'clickSaveImg':''}}">保存图片</button>
+      </view>
+      <image src='{{canvasimgsrc}}'></image> 
+    </view>
+  </view>
+</view>

@@ -1,0 +1,13 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}"  custom-class='cus' show-nav="{{showNav}}" back="{{back}}" bg-color='none'></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="container">
+      <view class="top">我是顶部</view>
+      <arefresher id="arefresherid" bind:refresh="onRefresh" bind:loadMore="onLoadMore" height="{{height}}" empty="{{list.length < 1}}">
+        <view wx:for="{{list}}" wx:key="index" class="item" scroll-x style="background-color: {{item.color}};">{{index + 1}}</view>
+      </arefresher>
+      <view class="top">我是底部</view>
+    </view>
+  </view>
+</view>

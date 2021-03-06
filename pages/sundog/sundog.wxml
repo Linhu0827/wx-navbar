@@ -1,0 +1,17 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}" bg-color="#FFFFFF"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <view class="sundog-container">
+      <view class="sundog-header">
+        <block wx:key='unique' wx:for="{{sundog.navigation}}">
+          <view>{{item}}</view>
+        </block>
+      </view>
+      <view class="sundog-img f_c_c">
+        <image class="sundog-bg" src="../../img/tools/sundog_bg.jpeg"></image>
+      </view>
+      <view class="sundog-content">{{sundog.content}}</view>
+    </view>
+  </view>
+</view>

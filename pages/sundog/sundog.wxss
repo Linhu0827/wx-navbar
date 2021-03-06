@@ -1,0 +1,26 @@
+.sundog-container{
+  padding: 32rpx;
+}
+.sundog-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  font-size: 30rpx;
+  line-height: 30rpx;
+}
+.sundog-img{
+  width: 100%;
+  border: 1rpx solid #e6dfe2e0;
+  margin-top: 50rpx;
+  padding: 20rpx 0;
+}
+.sundog-bg{
+  width: 538rpx;
+  height: 326rpx;
+  flex-shrink: 0;
+}
+.sundog-content{
+  text-indent: 2em;
+  padding-top: 60rpx;
+}

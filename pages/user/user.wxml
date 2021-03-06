@@ -1,0 +1,36 @@
+<view class='view-page'>
+  <block wx:if="{{scrollTop > 295}}">
+    <navbar page-name="{{pageName}}" show-nav="{{showNav}}" icon-color='#000' custom-class='cus' bg-color='none'></navbar>
+  </block>
+  <view class='page-content'>
+    <scroll-view scroll-y="false" bindscroll="scroll" style="height:100%;">
+      <view class="top">
+          <view class="UCenter-bg">
+            <image src="/img/user/tiger_ui_avatar.jpg" class="png" mode="scaleToFill"></image>
+            <view class="text-xl">Tiger
+              <text class="text-df">v1.0</text>
+            </view>
+            <view class="margin-top-sm">
+              <text>By:人称小虎子</text>
+            </view>
+          </view>
+      </view>
+      <view class="function2-ul">
+        <block wx:for="{{func2}}" wx:key='unique'>
+          <view class="function2-li" catchtap="{{item.tap}}" open-type="{{item.type}}">
+            <view class="function2-li-left">
+              <image class="function2-li-icon" src="{{item.icon}}"></image>
+              <view class="function2-li-name">{{item.name}}</view>
+            </view>
+            <view class="function2-li-right">
+              <image class="function2-li-right-icon" src="../../img/user/tiaozhuancopy3@2x.png"></image>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="bootom-box {{isIphoneX?'iphoneX-height':''}}"></view>
+    </scroll-view>
+  </view>
+</view>
+
+<tabbar tabbar="{{tabbar}}"></tabbar>

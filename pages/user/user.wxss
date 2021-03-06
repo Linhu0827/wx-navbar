@@ -1,0 +1,111 @@
+.top{
+  position: relative !important;
+  width: 100%;
+  top: 0;
+  z-index: 12;
+}
+
+.UCenter-bg {
+  height: 550rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg,#EAD6EE,#A0F1EA);
+}
+
+.UCenter-bg text {
+  opacity: 0.8;
+}
+.margin-top-sm text{
+  font-size: 32rpx;
+  font-weight: bold;
+  background: url('https://cache.suliab.cn/004_wximg.jpg') no-repeat;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: move 20s linear infinite;
+}
+.margin-top-sm{
+  margin-top: 8rpx;
+}
+@keyframes move {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+.UCenter-bg image {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+
+.UCenter-bg .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}
+
+.function2-ul{
+  width: calc(100% - 100rpx);
+	background-color: #ffffff;
+	box-shadow: 0rpx 4rpx 68rpx 0rpx 
+		rgba(39, 52, 125, 0.25);
+  border-radius: 24rpx;
+  margin: 52rpx auto 0;
+  padding: 10rpx 20rpx;
+}
+.function2-li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36rpx;
+  border-bottom: solid 2rpx #e7e9f8;
+}
+.function2-li:last-child{
+  border-bottom: none;
+}
+.function2-li-left{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.function2-li-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.function2-li-name{
+  font-size: 30rpx;
+  color: #4a4a4a;
+  margin-left: 20rpx;
+}
+.function2-li-right{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.function2-li-tri{
+  font-size: 26rpx;
+	color: #9b9b9b;
+}
+.function2-li-right-icon{
+  width: 10rpx;
+  height: 20rpx;
+  margin-left: 20rpx;
+}

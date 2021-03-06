@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "navbar": "/components/navbar/index",
+    "arefresher": "/components/arefresher/index"
+  }
+}

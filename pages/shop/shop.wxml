@@ -1,0 +1,34 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" icon-color='#fff' title-color="#fff" show-nav="{{showNav}}" bg-color="#FF9966">
+  </navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <!-- 搜索 -->
+    <view class="search">
+      <input class="search-box" placeholder='搜索' bindtap='goodsName'></input>
+    </view>
+    <!-- 左侧导航 -->
+    <view class='tui-fixed-left'>
+      <scroll-view class='tui-city-scroll' scroll-x="true" scroll-y="true" style='height:{{height}}rpx;'
+        scroll-with-animation="true" scroll-top="{{leftMenuTop}}">
+        <text class="menu-item {{index === currentActiveIndex ? 'menu-active' : ''}}" wx:for="{{navList}}"
+          wx:key="unique" data-index="{{index}}" id='{{index}}' catchtap='changeMenu'>{{item.c_name}}</text>
+      </scroll-view>
+    </view>
+    <!-- 右侧滚动商品 -->
+    <view class='content'>
+      <scroll-view class='tui-city-scroll-y' scroll-y="true" style='height: {{height}}rpx;' scroll-with-animation="true"
+        scroll-top="{{rightProTop}}" bindscroll="scroll">
+        <view class='pro-item' wx:for="{{navList}}" wx:key="unique">
+          <view class='tui-list-head' id='NAV{{index}}'>{{item.c_name}}</view>
+          <view class='tui-list-li'>
+            <view class='goods-box' wx:for-item='items' wx:for="{{item.list}}" wx:key="unique">
+              <image class='goodsImg' src='{{items.url}}'></image>
+              <view class='goodsName' bindtap="aaaa">{{items.goodsName}}</view>
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

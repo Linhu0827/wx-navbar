@@ -1,0 +1,3 @@
+.video-play image{
+  min-width: 100%;
+}

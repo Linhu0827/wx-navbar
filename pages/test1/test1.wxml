@@ -1,0 +1,10 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" icon-color='#fff' title-color="#fff" show-nav="{{showNav}}" back="{{back}}" bg-color="#CC329D"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <!-- 数据源 -->
+    <view class='video-play item-{{index}}' wx:for="{{lazyData}}" wx:key="unique">
+      <image src='{{item.show? item.src : loadIcon}}' class='{{item.show? "active" : ""}}'></image>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+/* pages/shouxieban/shouxieban.wxss */
+/*手写板  */
+page{
+  background: #f6f6f6;
+  padding: 5px auto
+}
+canvas{
+  border: 1rpx solid #d0d0d0;
+  margin: 5rpx;
+  background: #f2f2f2
+}
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.btns button{
+  width: 200rpx;
+  background-color: #d0d0d0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
