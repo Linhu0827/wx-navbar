@@ -1,0 +1,97 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test1/test1",
+    "pages/test2/test2",
+    "pages/test3/test3",
+    "pages/test4/test4",
+    "pages/test5/test5",
+    "pages/user/user",
+    "pages/middle/middle",
+    "pages/mine/mine",
+    "pages/shop/shop",
+    "pages/sundog/sundog"
+  ],
+  "subPackages": [
+    {
+      "root": "echarts",
+      "pages": [
+        "index/index",
+        "bar/index",
+        "measureText/index",
+        "line/index",
+        "scatter/index",
+        "sunburst/index",
+        "funnel/index",
+        "radar/index",
+        "gauge/index",
+        "pie/index",
+        "k/index",
+        "heatmap/index",
+        "tree/index",
+        "treemap/index",
+        "map/index",
+        "graph/index",
+        "boxplot/index",
+        "parallel/index",
+        "sankey/index",
+        "themeRiver/index",
+        "lazyLoad/index",
+        "multiCharts/index",
+        "move/index",
+        "saveCanvas/index"
+      ]
+    },
+    {
+      "root": "user",
+      "pages": [
+        "about/about",
+        "logs/logs"
+      ]
+    },
+    {
+      "root": "tools",
+      "pages": [
+        "id_photo/id_photo",
+        "swipe-action/swipe-action",
+        "rolling_news/rolling_news"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "backgroundColorTop": "#fff"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#515151",
+    "selectedColor": "#DAA520",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/icon/icon_index.png",
+        "selectedIconPath": "/img/icon/icon_index_hl.png"
+      },
+      {
+        "pagePath": "pages/sundog/sundog",
+        "text": "日记",
+        "iconPath": "/img/icon/icon_release.png",
+        "selectedIconPath": "/img/icon/icon_release.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/img/icon/icon_user.png",
+        "selectedIconPath": "/img/icon/icon_user_hl.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

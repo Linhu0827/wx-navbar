@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "tools/swipe-action/swipe-action",
+          "pathName": "tools/swipe-action/swipe-action",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/user/user",
+          "pathName": "pages/user/user",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "tools/rolling_news/rolling_news",
+          "pathName": "tools/rolling_news/rolling_news",
+          "query": "",
+          "scene": 1007
+        },
+        {
+          "name": "tools/sundog/sundog",
+          "pathName": "tools/sundog/sundog",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
