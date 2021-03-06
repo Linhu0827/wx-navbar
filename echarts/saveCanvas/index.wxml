@@ -1,0 +1,10 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <!--index.wxml-->
+    <view class="container">
+      <ec-canvas id="mychart-dom-save" canvas-id="mychart-save" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>
+</view>

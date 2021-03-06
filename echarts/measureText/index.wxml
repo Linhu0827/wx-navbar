@@ -1,0 +1,11 @@
+<view class='view-page'>
+  <navbar page-name="{{pageName}}" show-nav="{{showNav}}"></navbar>
+  <view class='page-content'>
+    <!--这里放页面的内容-->
+    <!--index.wxml-->
+    <view class="container">
+      measureText: {{ value }} 
+      <canvas canvas-id="measure" id="measure"></canvas>
+    </view>
+  </view>
+</view>
